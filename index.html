@@ -12,7 +12,7 @@
     <link href="customcss/index.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
-    <script src="customjs/index.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +22,7 @@
     <![endif]-->
 </head>
 <body onload="a()" id="body">
+    <div class="loader"></div>
     <span class="glyphicon glyphicon-chevron-up move"></span>
    <!--navbar-->
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white;">
@@ -131,58 +132,64 @@
                     <div class="your-class" >
                      
                         
-                        <div  class="slide" >
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;" />
+                        <div id="slide1"  class="slide" >
+                            <h6 id="slidesource1" class="text-primary"></h6>
+                            <a id="slideurl1" href="">
+                                <img id="slideimg1"  class="img-responsive" />
                             </a> 
-                            <h6 class="text-danger">Zee News 1</h6>
+                            <h6 id="slidetitle1" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide2" class="slide">
+                            <h6 id="slidesource2" class="text-primary"></h6>
+                            <a id="slideurl2" href="">
+                                <img id="slideimg2"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle2" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide3" class="slide">
+                            <h6 id="slidesource3" class="text-primary"></h6>
+                            <a id="slideurl3" href="">
+                                <img id="slideimg3"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle3" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide4" class="slide">
+                            <h6 id="slidesource4" class="text-primary"></h6>
+                            <a id="slideurl4" href="">
+                                <img id="slideimg4"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle4" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide5" class="slide">
+                            <h6 id="slidesource5" class="text-primary"></h6>
+                            <a id="slideurl5" href="">
+                                <img id="slideimg5"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle5" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide6" class="slide">
+                            <h6 id="slidesource6" class="text-primary"></h6>
+                            <a id="slideurl6" href="">
+                                <img id="slideimg6"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle6" class="text-danger"></h6>
+                        </div>
+
+                        <div id="slide7" class="slide">
+                            <h6 id="slidesource7" class="text-primary"></h6>
+                            <a id="slideurl7" href="">
+                                <img id="slideimg7"  class="img-responsive" />
+                            </a>
+                            <h6 id="slidetitle7" class="text-danger"></h6>
                         </div>
                         
-                        <div   class="slide">
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;" />
-                            </a> 
-                            <h6 class="text-danger">Zee News 2</h6>
-                        </div>
                        
-                        <div  class="slide">
-                            <h6 class="text-primary">Zee News </h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;" />
-                            </a> 
-                            <h6 class="text-danger">Zee News 3</h6>
-                        </div>
-                      
-                        <div   class="slide">
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;"/>
-                            </a> 
-                            <h6 class="text-danger">Zee News 4</h6>
-                        </div>
-                        <div  class="slide">
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;"/>
-                            </a> 
-                            <h6 class="text-danger">Zee News 5</h6>
-                        </div>
-                        <div class="slide">
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;" />
-                            </a>
-                            <h6 class="text-danger">Zee News 6</h6>
-                        </div>
-                        <div class="slide">
-                            <h6 class="text-primary">Zee News</h6>
-                            <a href="india.html">
-                                <img src="images/back2.png" style="height:150px;width:100%;" />
-                            </a>
-                            <h6 class="text-danger">Zee News 7</h6>
-                        </div>
+                       
                     </div>
                 </div>
             </div>     
@@ -198,34 +205,159 @@
                         </div>
                     </div>
                 </div>
-                <div class="thumbnail main" >
+                <div id="arc1" class="thumbnail main " >
                 <div class="row" >
                     <div class="col-lg-4 col-sm-12 col-xs-12">
                         <div class="handle">
-                            <img src="images/back2.png" class="img-responsive" />
+                            <img id="urlToImage1"  class="img-responsive" />
                         </div>
                     </div>
                     <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead ">Bihar CM Nitish Kumar favours a second term for President Pranab Mukherjee - Times of India</h4>
+                            <h4 class="text-danger newhead" id="title1" ></h4>
                         <div class="row">
-                            <div class="col-lg-7 col-xs-12" ><span class="glyphicon glyphicon-user text-primary"></span><span class="text-danger dt" style="font-family:'Courier New';font-size:15px"> Ankit ankit Mishra </span></div>
+                            <div class="col-lg-7 col-xs-12" ><span class="glyphicon glyphicon-user text-primary"></span> <span id="author1" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
                             <div class="col-lg-5 col-xs-12">
-                                <div class="row">
-                                    <div class="col-lg-6 col-xs-12" style="padding: 0px 0px 0px 15px;">
-                                        <span class="glyphicon glyphicon-time text-primary"></span><span class="text-danger dt" style="font-family:'Courier New';font-size:12px"> 10:35 am </span>      
-                                    </div>
-                                    <div class="col-lg-6 col-xs-12" style="padding: 0px 0px 0px 15px;">
-                                       <span class="glyphicon glyphicon-calendar text-primary"></span><span class="text-danger dt" style="font-family:'Courier New';font-size:12px"> 2017-5-15 </span>
-                                    </div>
-                                </div>
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt1" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>                                              
                             </div>
                             
                         </div>
                             <div style="padding:0px;" ><hr /></div>
-                            <span style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> Nitish asked the Narendra Modi government to talk to all opposition parties and try for a consensus candidate for the post “It’s the responsibility of the ruling party at the Centre to contact all opposition parties and try to build a consensus on the presidential candidate,” he said.</span>
-                           <br /> <button class="btn btn-sm but pull-right" ><span class="glyphicon glyphicon-link"></span> Read More</button>
+                            <span id="description1" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                           <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url1" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
                     </div>
                 </div>
+                </div>
+
+                <div id="arc2" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage2" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title2"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author2" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt2" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span> 
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description2" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url2" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arc3" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage3" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title3"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author3" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt3" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description3" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url3" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arc4" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage4" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title4"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author4" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt4" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description4" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url4" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arc5" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage5" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title5"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author5" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt5" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description5" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url5" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arc6" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage6" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title6"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author6" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt6" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description6" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url6" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arc7" class="thumbnail main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="handle">
+                                <img id="urlToImage7" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
+                            <h4 class="text-danger newhead" id="title7"></h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author7" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
+                                <div class="col-lg-5 col-xs-12">
+                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt7" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
+                                </div>
+                            </div>
+                            <div style="padding:0px;"><hr /></div>
+                            <span id="description7" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
+                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url7" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
+                        </div>
+                    </div>
                 </div>
              
                
@@ -237,36 +369,78 @@
                 </div>
                 
                     
-                <div class="row side" >
-                    <a href="#">
+                <div id="side1" class="row side" >
+                    <a id="sideurl1" href="#">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"style="padding:3px;" >
-                            <img src="images/back2.png" class="img-responsive" />
+                            <img id="sideimg1"  class="img-responsive" />
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
-                            Bihar CM Nitish Kumar favours a second term for President Pranab Mukherjee
+                        <div id="sidetitle1" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+                            
                         </div>
                     </a>
                 </div>
-                <div class="row side">
-                    <a href="#">
+                <div id="side2" class="row side">
+                    <a id="sideurl2" href="#">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
-                            <img src="images/back2.png" class="img-responsive" />
+                            <img id="sideimg2"  class="img-responsive" />
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
-                            Bihar CM Nitish Kumar favours a second term for President Pranab Mukherjee
+                        <div id="sidetitle2" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+                            
                         </div>
                     </a>
                 </div>
-                <div class="row side">
-                    <a href="#">
+                <div id="side3" class="row side">
+                    <a id="sideurl3" href="#">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
-                            <img src="images/back2.png" class="img-responsive" />
+                            <img id="sideimg3"  class="img-responsive" />
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
-                            Bihar CM Nitish Kumar favours a second term for President Pranab Mukherjee
+                        <div id="sidetitle3" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+
                         </div>
                     </a>
                 </div>
+                <div id="side4" class="row side">
+                    <a id="sideurl4" href="#">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
+                            <img id="sideimg4"  class="img-responsive" />
+                        </div>
+                        <div id="sidetitle4" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+
+                        </div>
+                    </a>
+                </div>
+                <div id="side5" class="row side">
+                    <a id="sideurl5" href="#">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
+                            <img id="sideimg5"  class="img-responsive" />
+                        </div>
+                        <div id="sidetitle5" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+
+                        </div>
+                    </a>
+                </div>
+                <div id="side6" class="row side">
+                    <a id="sideurl6" href="#">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
+                            <img id="sideimg6"  class="img-responsive" />
+                        </div>
+                        <div id="sidetitle6" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+
+                        </div>
+                    </a>
+                </div>
+                <div id="side7" class="row side">
+                    <a id="sideurl7" href="#">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding:3px;">
+                            <img id="sideimg7"  class="img-responsive" />
+                        </div>
+                        <div id="sidetitle7" class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-10px;padding-right:0px;font-family: 'Jura', sans-serif;font-weight:bold;font-size:15px;text-align:justify">
+
+                        </div>
+                    </a>
+                </div>
+               
+               
                
                 
               
@@ -285,12 +459,13 @@
                     </div>
                     <div class="col-lg-4">
                         <div style="margin-top:25px;font-family:'Jura', sans-serif;font-size:15px;font-weight:bold;text-align:center;min-height:50px">
-                           <a class="twitter-share-button" target="_blank"
+                         <!--  <a class="twitter-share-button" target="_blank"
                                href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20News%20Website&url=https%3A%2F%2Frks-dev.github.io%2Ftopheadlines"
                                data-size="large">
                                Tweet
                             </a>
                             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                             -->
                               
                             <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Frks-dev.github.io%2Ftopheadlines%2F&layout=button_count&size=large&mobile_iframe=false&appId=527813727370159&width=84&height=28" width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                         </div>
@@ -307,13 +482,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="customjs/index.js"></script>
     <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
         $('.your-class').slick({
            
             infinite: true,
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 1000,
