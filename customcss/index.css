@@ -168,13 +168,17 @@ body {
   margin-bottom: 15px;
   line-height: 1.42857143;
   background-color: #fff;
-  border-top: 1px solid silver;
-  border-left: 1px solid silver;
-  border-right: 1px solid silver;
-  border-bottom: 1px solid silver;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
   border-radius: 0px;
  
  
+ 
+}
+.thumbnail:hover{
+     box-shadow:1px 2px 3px rgba(0,0,0,.3);
 }
 hr { 
     display: block;
@@ -216,12 +220,14 @@ hr {
 }
 .side:hover{
     border-right: 2px solid rgb(175, 33, 33);
+     box-shadow:1px 2px 3px rgba(0,0,0,.3);
     cursor:pointer;
 }
 .main{
     display:none;
     animation: main 500ms linear;
    animation-fill-mode:forwards;
+   
 }
 .move{
     
@@ -295,5 +301,11 @@ hr {
         transform:translateX(0px) scale(1);
        
     }
+}
+
+@media screen and (max-width: 480px) {
+    .cus > ul > li:hover{
+    border-bottom:1px solid rgb(0, 116, 203);  
+}
 }
 

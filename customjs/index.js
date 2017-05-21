@@ -1,4 +1,6 @@
 ﻿function a() {
+    document.getElementById('sldiv').style.display = 'none';
+    $('#sldiv').fadeIn('slow');
     //Check to see if the window is top if not then display button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
@@ -18,10 +20,14 @@
     if (w < 1200) {
         document.getElementById('foot').style.borderRight = '0px';
         //document.getElementById('body').style.backgroundColor = 'rgb(234, 234, 234)';
+        for (var i = 1; i < 8; i++)
+        {
+            document.getElementById('side' + i).style.boxShadow = '1px 2px 3px rgba(0,0,0,.3)';
+        }
+        
     }
-    $(window).load(function () {
-        $(".loader").fadeOut("slow");
-    });
+   
+   
     for (var i = 1; i < 8; i++) {
         article(i);
     }
@@ -31,7 +37,13 @@
     for (var k = 1; k < 8; k++) {
         slidearticle(k);
     }
-
+ 
+       
+    $(window).load(function () {
+        $(".loader").fadeOut("slow");
+        
+        
+    });
    
    
 }
@@ -201,6 +213,7 @@ function slidearticle(x) {
     ourRequest.onloadend = function () {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
             var ourData = JSON.parse(ourRequest.responseText);
+            
             if (ourData.status == "ok") {
                 injectslide(ourData, x);
             } else {
@@ -224,7 +237,7 @@ function injectslide(data, y) {
     document.getElementById('slidetitle' + y).innerHTML = data.articles[1].title;
     document.getElementById('slideimg' + y).src = data.articles[1].urlToImage;
     document.getElementById('slideurl' + y).href = data.articles[1].url;
-    document.getElementById('slidesource' + y).href = data.source;
+    document.getElementById('slidesource' + y).innerHTML = data.source;
 
 }
 
