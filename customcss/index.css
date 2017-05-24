@@ -256,6 +256,19 @@ hr {
     background: url('../images/box.gif') 50% 50% no-repeat rgba(249, 249, 249,.9);
     opacity: .9;
 }
+.maincontent{
+    text-decoration:none;
+    color:red;
+    padding-top:5px;
+    padding-right:5px;
+}
+.maincontent:hover{
+    background-color:red;
+    color:white;
+     text-decoration:none;
+     padding: 5px 5px;
+     border-radius:6px;
+}
 
 @keyframes side{
     0%{

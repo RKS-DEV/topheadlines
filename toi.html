@@ -28,7 +28,7 @@
 </head>
 <body onload="a()" id="body">
     <div style="display:none">
-        <h1>The latest news headlines from various news sources all at one palce.</h1>
+        <h1>The latest news headlines from the times of india.</h1>
         <h2>Al Jazeera | BBC News | Bloomberg | Buzzfeed | CNBC | Entertainment Weekly | ESPN Cric Info | Financial Times  | Fortune | MTV News | National Geographic | New Scientist | TechCrunch | TechRadar | The Hindu  | The New York Times | The Telegraph | The Times of India  | The Verge | The Wall Street Journal </h2>
     </div>
     <div class="loader"></div>
@@ -57,7 +57,7 @@
                     <li class="dropdown" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INDIA <span class="caret "></span></a>
                         <ul class="dropdown-menu  ">
-                            <li><a href="toi.html">The Times of India</a></li>
+                            <li class="active" ><a href="toi.html">The Times of India</a></li>
                             <li><a href="hindu.html">The Hindu</a></li>
                             <li><a href="telegraph.html">The Telegraph</a></li>
                             
@@ -141,9 +141,7 @@
                     <div class="your-class" style="background-color:white;" >
                      
                         
-                        <div id="slide1"  class="slide"  >
-                            <span><img alt="cnbc" src="images/cnbc.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource1" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                        <div id="slide1"  class="slide"  >  
                             <a id="slideurl1" href="" target="_blank">
                                 <img id="slideimg1"  class="img-responsive" />
                             </a> 
@@ -151,8 +149,7 @@
                         </div>
 
                         <div id="slide2" class="slide">
-                            <span><img alt="espn" src="images/espn.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource2" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                           
                             <a id="slideurl2" href="" target="_blank">
                                 <img id="slideimg2"  class="img-responsive" />
                             </a>
@@ -160,8 +157,7 @@
                         </div>
 
                         <div id="slide3" class="slide">
-                            <span><img alt="new york times" src="images/NYT.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource3" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                           
                             <a id="slideurl3" href="" target="_blank">
                                 <img id="slideimg3"  class="img-responsive" />
                             </a>
@@ -169,8 +165,7 @@
                         </div>
 
                         <div id="slide4" class="slide">
-                            <span><img alt="bloomberg" src="images/bloomberg.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource4" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                           
                             <a id="slideurl4" href="" target="_blank">
                                 <img id="slideimg4"  class="img-responsive" />
                             </a>
@@ -178,8 +173,7 @@
                         </div>
 
                         <div id="slide5" class="slide">
-                            <span><img alt="the verge" src="images/the_verge.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource5" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                           
                             <a id="slideurl5" href="" target="_blank">
                                 <img id="slideimg5"  class="img-responsive" />
                             </a>
@@ -187,8 +181,7 @@
                         </div>
 
                         <div id="slide6" class="slide">
-                            <span><img alt="buzzfeed" src="images/Buzzfeed.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource6" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                          
                            
                             <a id="slideurl6" href="" target="_blank">
                                 <img id="slideimg6"  class="img-responsive" />
@@ -197,8 +190,7 @@
                         </div>
 
                         <div id="slide7" class="slide">
-                            <span><img alt="natgeo" src="images/natgeo.png" style="display:inline; padding:5px 1px;" height="30" /></span>
-                            <span id="slidesource7" class="text-primary" style="white-space:nowrap;display:inline;font-size:13px"></span>
+                         
                          
                             <a id="slideurl7" href="" target="_blank">
                                 <img id="slideimg7"  class="img-responsive" />
@@ -219,166 +211,48 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="contentdiv1">
-                            <div class="channel"><span class="glyphicon glyphicon-circle-arrow-right" style="font-size:15px;"></span> MISCELLANEOUS<span class="pull-right ani"></span></div>
+                            <div class="channel">
+                              The Times Of India<span class="pull-right ani"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="arc1" class="thumbnail main " >
-                <div class="row" >
-                    <div class="col-lg-4 col-sm-12 col-xs-12">
-                        <div class="handle">
-                            <img id="urlToImage1"  class="img-responsive" />
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title1" ></h4>
+                <!--main article-->
+                <div id="outputNational"></div>
+
+                <script id="rawTemplateNational" type="text/x-handlebars-template">
+                    {{#each articles}}
+
+
+                    <div class="thumbnail  ">
                         <div class="row">
-                            <div class="col-lg-7 col-xs-12" ><span class="glyphicon glyphicon-user text-primary"></span> <span id="author1" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                            <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt1" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>                                              
-                            </div>
-                            
-                        </div>
-                            <div style="padding:0px;" ><hr /></div>
-                            <span id="description1" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                           <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url1" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                    </div>
-                </div>
-                </div>
-
-                <div id="arc2" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage2" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title2"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author2" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt2" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span> 
+                            <div class="col-lg-4 col-sm-12 col-xs-12">
+                                <div class="handle">
+                                    <img src="{{urlToImage}}" class="img-responsive" />
                                 </div>
                             </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description2" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url2" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                        </div>
-                    </div>
-                </div>
+                            <div class="col-lg-8 col-sm-12 col-xs-12">
+                                <h4 class="text-danger newhead">{{title}}</h4>
+                                <div class="row">
+                                    <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span class="text-danger dt" style="font-family:'Courier New';font-size:15px">{{author}}</span></div>
+                                    <div class="col-lg-5 col-xs-12">
+                                        <span class="glyphicon glyphicon-time text-primary"></span> <span class="text-danger dt" style="font-family:'Courier New';font-size:12px">{{publishedAt}}</span>
+                                    </div>
 
-                <div id="arc3" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage3" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title3"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author3" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt3" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
                                 </div>
+                                <div style="padding:0px;"><hr /></div>
+                                <span style="font-family:'Fjord One', serif;font-size:15px;font-weight:500">{{description}}</span>
+                                <br />  <a class="pull-right maincontent" id="url1" target="_blank" href="{{url}}"><span class="glyphicon glyphicon-link"></span> Read More</a>
                             </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description3" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url3" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
                         </div>
                     </div>
-                </div>
 
-                <div id="arc4" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage4" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title4"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author4" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt4" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
-                                </div>
-                            </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description4" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url4" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                        </div>
-                    </div>
-                </div>
+                    {{/each}}
+                </script>
+                <script src="handlebars-v4.0.5.js"></script>
+                
 
-                <div id="arc5" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage5" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title5"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author5" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt5" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
-                                </div>
-                            </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description5" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url5" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="arc6" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage6" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title6"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author6" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt6" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
-                                </div>
-                            </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description6" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url6" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="arc7" class="thumbnail main">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 col-xs-12">
-                            <div class="handle">
-                                <img id="urlToImage7" class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12 col-xs-12">
-                            <h4 class="text-danger newhead" id="title7"></h4>
-                            <div class="row">
-                                <div class="col-lg-7 col-xs-12"><span class="glyphicon glyphicon-user text-primary"></span> <span id="author7" class="text-danger dt" style="font-family:'Courier New';font-size:15px"></span></div>
-                                <div class="col-lg-5 col-xs-12">
-                                    <span class="glyphicon glyphicon-time text-primary"></span> <span id="publishedAt7" class="text-danger dt" style="font-family:'Courier New';font-size:12px"></span>
-                                </div>
-                            </div>
-                            <div style="padding:0px;"><hr /></div>
-                            <span id="description7" style="font-family:'Fjord One', serif;font-size:15px;font-weight:500"> </span>
-                            <br />  <a style="text-decoration:none;color:red;padding-top:5px;padding-right:5px;" id="url7" target="_blank" href="" class="pull-right"><span class="glyphicon glyphicon-link"></span> Read More</a>
-                        </div>
-                    </div>
-                </div>
-             
-               
+                
             </div>
             <div class="col-lg-3 col-md-3">
                 <div class="contentdiv1">
@@ -477,7 +351,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div style="margin-top:25px;font-family:'Jura', sans-serif;font-size:15px;font-weight:bold;text-align:center;min-height:50px">
-                    <a class="twitter-share-button" target="_blank"
+                      <a class="twitter-share-button" target="_blank"
                                href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20News%20Website&url=https%3A%2F%2Frks-dev.github.io%2Ftopheadlines"
                                data-size="large">
                                Tweet
@@ -501,6 +375,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="customjs/index.js"></script>
+    <script src="customjs/toi.js"></script>
     <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
         $('.your-class').slick({
