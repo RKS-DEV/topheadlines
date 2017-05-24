@@ -1,5 +1,4 @@
 ﻿function a() {
-    window.alert('hello');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
             $('.move').fadeIn();
